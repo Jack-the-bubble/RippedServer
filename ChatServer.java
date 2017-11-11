@@ -54,6 +54,11 @@ public class ChatServer {
     public static void main(String[] args) throws Exception {
         System.out.println("The chat server is running.");
         ServerSocket listener = new ServerSocket(PORT);
+        
+        //ja dodalem
+        System.out.println(listener.getLocalPort());
+        
+        
         try {
             while (true) {
                 new Handler(listener.accept()).start();

@@ -98,6 +98,10 @@ public class ChatClient {
 
         // Make connection and initialize streams
         String serverAddress = getServerAddress();
+        
+        //ja dodalem
+        System.out.println("oto adres " +serverAddress);
+        
         Socket socket = new Socket(serverAddress, 9091);
         in = new BufferedReader(new InputStreamReader(
             socket.getInputStream()));
